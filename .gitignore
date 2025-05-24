@@ -1,5 +1,110 @@
-#Nix
-
+# Nix
 .direnv/
 target
 result
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+*.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+pip-freeze.txt
+pip-requirements.txt
+*.log
+*.pot
+*.pyc
+celerybeat-schedule
+db.sqlite3
+db.sqlite3-journal
+instance/
+# Playwright
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Next.js / Node.js
+node_modules/
+.next/
+out/
+build/ # Common for some build processes, though Next.js uses .next
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # If you are using npm and not yarn
+yarn.lock # If you are using yarn and not npm (keep one, ignore the other)
+.pnp/
+.pnp.js
+.pnp.cjs
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.sublime-project
+.idea/
+!.idea/misc.xml # Can be shared
+!.idea/modules.xml # Can be shared
+!.idea/workspace.xml # Often user-specific, but can be shared in small teams if desired
+!.idea/*.iml # Can be shared
+*.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+Desktop.ini # Windows
+
+# Environment variables
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secrets - Ensure no actual secrets are committed!
+secrets/
+*.pem
+*.key
+credentials.*
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+coverage_html_report/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
