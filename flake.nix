@@ -104,6 +104,7 @@ EOF
               node2nix
               nodejs
               nodePackages.pnpm
+              pkgs-unstable.code-cursor
               pkgs-unstable.better-commits
             ];
           };
